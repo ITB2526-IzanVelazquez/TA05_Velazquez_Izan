@@ -1,1 +1,161 @@
-<!-- projects.html icons version -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Izan Velazquez Cerrato</title>
+
+    <link rel="stylesheet" href="projects.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+<div class="project-wrapper">
+
+    <!-- TOP -->
+    <header class="top-section">
+        <a href="index.html" class="pill name-box name-link">
+            <h2>IZAN VELAZQUEZ CERRATO</h2>
+        </a>
+
+        <div class="pill title-box">
+            <h2>PROJECTS</h2>
+        </div>
+    </header>
+
+    <!-- PROJECTS SECTION -->
+    <main class="projects-section box">
+
+        <!-- FILTERS -->
+        <div class="filters-container">
+            <div class="filters pill">
+                <input type="text" id="filterInput" placeholder="Search project..." />
+            </div>
+
+            <div class="filters">
+                <div class="filter-bubble">
+                    <label for="languageFilter">Language:</label>
+                    <select id="languageFilter">
+                        <option value="all">All Languages</option>
+                        <option value="MySQL">MySQL</option>
+                        <option value="Cisco">Cisco</option>
+                        <option value="JS">JS</option>
+                        <option value="CSS">CSS</option>
+                        <option value="C++">C++</option>
+                        <option value="HTML">HTML</option>
+                        <option value="Python">Python</option>
+                    </select>
+                </div>
+
+                <div class="filter-bubble">
+                    <label for="yearFilter">Year:</label>
+                    <select id="yearFilter">
+                        <option value="all">All Years</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECT LIST -->
+        <div class="projects-list">
+
+            <div class="project-row"
+                 data-language="HTML, CSS, JS"
+                 data-year="2025"
+                 onclick="window.location.href='project1.html'">
+                <div class="project-name">Pagina Web</div>
+
+                <div class="project-lang tech-icons" aria-label="HTML CSS JavaScript">
+                    <span class="tech" title="HTML"><i class="fa-brands fa-html5"></i></span>
+                    <span class="tech" title="CSS"><i class="fa-brands fa-css3-alt"></i></span>
+                    <span class="tech" title="JavaScript"><i class="fa-brands fa-js"></i></span>
+                </div>
+
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Cisco" data-year="2024">
+                <div class="project-name">Network Lab</div>
+
+                <div class="project-lang tech-icons" aria-label="Cisco / Networking">
+                    <span class="tech" title="Networking"><i class="fa-solid fa-network-wired"></i></span>
+                    <span class="tech" title="Router"><i class="fa-solid fa-router"></i></span>
+                </div>
+
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="MySQL" data-year="2024">
+                <div class="project-name">Database Design</div>
+
+                <div class="project-lang tech-icons" aria-label="MySQL / Database">
+                    <span class="tech" title="Database"><i class="fa-solid fa-database"></i></span>
+                    <span class="tech" title="Server"><i class="fa-solid fa-server"></i></span>
+                </div>
+
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="Python" data-year="2023">
+                <div class="project-name">Linux Automation</div>
+
+                <div class="project-lang tech-icons" aria-label="Python / Linux">
+                    <span class="tech" title="Python"><i class="fa-brands fa-python"></i></span>
+                    <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
+                </div>
+
+                <div class="project-date">2023</div>
+            </div>
+
+            <div class="project-row" data-language="C++" data-year="2023">
+                <div class="project-name">Security Basics</div>
+
+                <div class="project-lang tech-icons" aria-label="C++ / Security">
+                    <span class="tech" title="Code"><i class="fa-solid fa-code"></i></span>
+                    <span class="tech" title="Security"><i class="fa-solid fa-shield-halved"></i></span>
+                </div>
+
+                <div class="project-date">2023</div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+        <div class="pill footer-left">
+            <p>© 2025 — Portfolio by Izan</p>
+        </div>
+
+        <div class="pill footer-right">
+            <div class="contact-icons">
+                <a class="social-icon twitter-icon"
+                   href="https://x.com/_nooneofyou_"
+                   target="_blank" rel="noopener">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+
+                <a class="social-icon linkedin-icon"
+                   href="https://www.linkedin.com/"
+                   target="_blank" rel="noopener">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a href="contacte.html" class="contact-btn">Contact Me</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script src="projects.js"></script>
+</body>
+</html>

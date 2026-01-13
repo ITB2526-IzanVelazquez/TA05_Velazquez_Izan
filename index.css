@@ -6,7 +6,6 @@ body{
   font-family: Arial, sans-serif;
   color: white;
 
-  /* Fondo rojo igual en toda la web */
   background:
     radial-gradient(circle at 15% 12%, rgba(255, 60, 60, 0.22), transparent 55%),
     radial-gradient(circle at 85% 35%, rgba(180, 20, 20, 0.22), transparent 55%),
@@ -87,6 +86,24 @@ body{
   gap: 12px;
 }
 
+/* ✅ SCROLL reusable class */
+.scroll-list{
+  max-height: 52vh;         /* ✅ scroll sin reventar el layout */
+  overflow-y: auto;
+  padding-right: 8px;       /* para que no tape el scroll */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 70, 70, 0.55) transparent;
+}
+
+.scroll-list::-webkit-scrollbar{ width: 7px; }
+.scroll-list::-webkit-scrollbar-thumb{
+  background: rgba(255, 70, 70, 0.55);
+  border-radius: 10px;
+}
+.scroll-list::-webkit-scrollbar-track{
+  background: transparent;
+}
+
 .project-item{
   padding: 14px 16px;
   border-radius: 16px;
@@ -100,6 +117,13 @@ body{
 .project-item:hover{
   transform: translateY(-2px);
   background: rgba(255, 70, 70, 0.16);
+}
+
+/* ✅ resalta el proyecto clicable principal */
+.project-item.is-featured{
+  background: linear-gradient(90deg, rgba(255,59,59,0.22), rgba(179,18,18,0.28));
+  border: 1px solid rgba(255, 70, 70, 0.55);
+  box-shadow: 0 0 16px rgba(255, 70, 70, 0.20);
 }
 
 /* ===== CENTER ===== */
@@ -183,7 +207,7 @@ body{
 
 .contact-btn:hover{ transform: scale(1.05); }
 
-/* ✅ FIX MOBILE HEADER OVERFLOW (EL BUG QUE TENÍAS) */
+/* ✅ FIX MOBILE HEADER OVERFLOW */
 @media (max-width: 768px) {
   .top-section{
     flex-direction: column;
@@ -202,5 +226,10 @@ body{
   }
   .footer-left, .footer-right{
     width: 100%;
+  }
+
+  /* scroll friendly on mobile */
+  .scroll-list{
+    max-height: 45vh;
   }
 }

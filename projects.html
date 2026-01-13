@@ -38,91 +38,316 @@
 
             <div class="filters">
                 <div class="filter-bubble">
-                    <label for="languageFilter">Language:</label>
+                    <label for="languageFilter">Tech:</label>
                     <select id="languageFilter">
-                        <option value="all">All Languages</option>
+                        <option value="all">All</option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JS">JS</option>
+                        <option value="Python">Python</option>
+                        <option value="Linux">Linux</option>
                         <option value="MySQL">MySQL</option>
                         <option value="Cisco">Cisco</option>
-                        <option value="JS">JS</option>
-                        <option value="CSS">CSS</option>
+                        <option value="React">React</option>
+                        <option value="Node">Node</option>
+                        <option value="Docker">Docker</option>
+                        <option value="Git">Git</option>
+                        <option value="AWS">AWS</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Java">Java</option>
                         <option value="C++">C++</option>
-                        <option value="HTML">HTML</option>
-                        <option value="Python">Python</option>
+                        <option value="Security">Security</option>
+                        <option value="Bash">Bash</option>
+                        <option value="Nginx">Nginx</option>
+                        <option value="Windows">Windows</option>
                     </select>
                 </div>
 
                 <div class="filter-bubble">
                     <label for="yearFilter">Year:</label>
                     <select id="yearFilter">
-                        <option value="all">All Years</option>
+                        <option value="all">All</option>
                         <option value="2023">2023</option>
                         <option value="2024">2024</option>
                         <option value="2025">2025</option>
+                        <option value="2026">2026</option>
                     </select>
                 </div>
             </div>
         </div>
 
-        <!-- PROJECT LIST -->
+        <!-- PROJECT LIST (30) -->
         <div class="projects-list">
 
-            <div class="project-row"
-                 data-language="HTML, CSS, JS"
-                 data-year="2025"
-                 onclick="window.location.href='project1.html'">
-                <div class="project-name">Pagina Web</div>
-
-                <div class="project-lang tech-icons" aria-label="HTML CSS JavaScript">
+            <div class="project-row" data-language="HTML, CSS, JS" data-year="2025">
+                <div class="project-name">Aurora Portfolio V2</div>
+                <div class="project-lang tech-icons">
                     <span class="tech" title="HTML"><i class="fa-brands fa-html5"></i></span>
                     <span class="tech" title="CSS"><i class="fa-brands fa-css3-alt"></i></span>
-                    <span class="tech" title="JavaScript"><i class="fa-brands fa-js"></i></span>
+                    <span class="tech" title="JS"><i class="fa-brands fa-js"></i></span>
                 </div>
-
                 <div class="project-date">2025</div>
             </div>
 
-            <div class="project-row" data-language="Cisco" data-year="2024">
-                <div class="project-name">Network Lab</div>
-
-                <div class="project-lang tech-icons" aria-label="Cisco / Networking">
+            <div class="project-row" data-language="Cisco, Networking" data-year="2024">
+                <div class="project-name">PacketTracer VLAN Lab</div>
+                <div class="project-lang tech-icons">
                     <span class="tech" title="Networking"><i class="fa-solid fa-network-wired"></i></span>
                     <span class="tech" title="Router"><i class="fa-solid fa-router"></i></span>
                 </div>
-
                 <div class="project-date">2024</div>
             </div>
 
-            <div class="project-row" data-language="MySQL" data-year="2024">
-                <div class="project-name">Database Design</div>
-
-                <div class="project-lang tech-icons" aria-label="MySQL / Database">
+            <div class="project-row" data-language="MySQL, Database" data-year="2024">
+                <div class="project-name">MySQL Movie Database</div>
+                <div class="project-lang tech-icons">
                     <span class="tech" title="Database"><i class="fa-solid fa-database"></i></span>
                     <span class="tech" title="Server"><i class="fa-solid fa-server"></i></span>
                 </div>
-
                 <div class="project-date">2024</div>
             </div>
 
-            <div class="project-row" data-language="Python" data-year="2023">
-                <div class="project-name">Linux Automation</div>
-
-                <div class="project-lang tech-icons" aria-label="Python / Linux">
+            <div class="project-row" data-language="Python, Security" data-year="2025">
+                <div class="project-name">Python Log Analyzer</div>
+                <div class="project-lang tech-icons">
                     <span class="tech" title="Python"><i class="fa-brands fa-python"></i></span>
+                    <span class="tech" title="Security"><i class="fa-solid fa-shield-halved"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="React, JS" data-year="2025">
+                <div class="project-name">React Mini Storefront</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="React"><i class="fa-brands fa-react"></i></span>
+                    <span class="tech" title="JS"><i class="fa-brands fa-js"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Node, JS" data-year="2025">
+                <div class="project-name">Node REST API Starter</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Node"><i class="fa-brands fa-node-js"></i></span>
+                    <span class="tech" title="JS"><i class="fa-brands fa-js"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Docker, Linux" data-year="2024">
+                <div class="project-name">Dockerized Web Stack</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Docker"><i class="fa-brands fa-docker"></i></span>
                     <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
                 </div>
+                <div class="project-date">2024</div>
+            </div>
 
+            <div class="project-row" data-language="Linux, Bash" data-year="2024">
+                <div class="project-name">Linux Backup Automation</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
+                    <span class="tech" title="Terminal"><i class="fa-solid fa-terminal"></i></span>
+                </div>
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="AWS, Linux" data-year="2025">
+                <div class="project-name">AWS EC2 Deployment Notes</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="AWS"><i class="fa-brands fa-aws"></i></span>
+                    <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Git, CI" data-year="2025">
+                <div class="project-name">GitHub Actions CI Demo</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Git"><i class="fa-brands fa-git-alt"></i></span>
+                    <span class="tech" title="GitHub"><i class="fa-brands fa-github"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="PHP, MySQL" data-year="2023">
+                <div class="project-name">PHP Login System</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="PHP"><i class="fa-brands fa-php"></i></span>
+                    <span class="tech" title="DB"><i class="fa-solid fa-database"></i></span>
+                </div>
                 <div class="project-date">2023</div>
             </div>
 
-            <div class="project-row" data-language="C++" data-year="2023">
-                <div class="project-name">Security Basics</div>
+            <div class="project-row" data-language="Java" data-year="2023">
+                <div class="project-name">Java OOP Practice Suite</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Java"><i class="fa-brands fa-java"></i></span>
+                    <span class="tech" title="Code"><i class="fa-solid fa-code"></i></span>
+                </div>
+                <div class="project-date">2023</div>
+            </div>
 
-                <div class="project-lang tech-icons" aria-label="C++ / Security">
+            <div class="project-row" data-language="C++, Security" data-year="2023">
+                <div class="project-name">C++ Data Structures Lab</div>
+                <div class="project-lang tech-icons">
                     <span class="tech" title="Code"><i class="fa-solid fa-code"></i></span>
                     <span class="tech" title="Security"><i class="fa-solid fa-shield-halved"></i></span>
                 </div>
-
                 <div class="project-date">2023</div>
+            </div>
+
+            <div class="project-row" data-language="Security, Reporting" data-year="2024">
+                <div class="project-name">Pentest Report Template</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Security"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span class="tech" title="Doc"><i class="fa-solid fa-file-lines"></i></span>
+                </div>
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="Security, Linux" data-year="2024">
+                <div class="project-name">Kali Tool Cheatsheet</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
+                    <span class="tech" title="Security"><i class="fa-solid fa-shield-halved"></i></span>
+                </div>
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="JS, Monitoring" data-year="2025">
+                <div class="project-name">API Status Monitor</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="JS"><i class="fa-brands fa-js"></i></span>
+                    <span class="tech" title="Monitor"><i class="fa-solid fa-gauge-high"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Security, UI" data-year="2025">
+                <div class="project-name">Secure Password Vault UI</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Lock"><i class="fa-solid fa-lock"></i></span>
+                    <span class="tech" title="Shield"><i class="fa-solid fa-shield-halved"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Python, Networking" data-year="2024">
+                <div class="project-name">Network Scanner CLI</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Python"><i class="fa-brands fa-python"></i></span>
+                    <span class="tech" title="Networking"><i class="fa-solid fa-network-wired"></i></span>
+                </div>
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="CSS" data-year="2025">
+                <div class="project-name">CSS Glassmorphism Kit</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="CSS"><i class="fa-brands fa-css3-alt"></i></span>
+                    <span class="tech" title="Palette"><i class="fa-solid fa-palette"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="JS" data-year="2025">
+                <div class="project-name">JS Image Carousel Pack</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="JS"><i class="fa-brands fa-js"></i></span>
+                    <span class="tech" title="Images"><i class="fa-regular fa-images"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Windows" data-year="2024">
+                <div class="project-name">Windows Server AD Setup</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Server"><i class="fa-solid fa-server"></i></span>
+                    <span class="tech" title="Users"><i class="fa-solid fa-users"></i></span>
+                </div>
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="Security, SSH" data-year="2025">
+                <div class="project-name">SSH Hardening Checklist</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Key"><i class="fa-solid fa-key"></i></span>
+                    <span class="tech" title="Shield"><i class="fa-solid fa-shield-halved"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Nginx, Linux" data-year="2024">
+                <div class="project-name">Nginx Reverse Proxy Guide</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Server"><i class="fa-solid fa-server"></i></span>
+                    <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
+                </div>
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="Bash, Linux" data-year="2023">
+                <div class="project-name">Bash Cleanup Scripts</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Terminal"><i class="fa-solid fa-terminal"></i></span>
+                    <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
+                </div>
+                <div class="project-date">2023</div>
+            </div>
+
+            <div class="project-row" data-language="Security" data-year="2026">
+                <div class="project-name">Threat Modeling Notes</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Shield"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span class="tech" title="Diagram"><i class="fa-solid fa-diagram-project"></i></span>
+                </div>
+                <div class="project-date">2026</div>
+            </div>
+
+            <div class="project-row" data-language="MySQL, Security" data-year="2026">
+                <div class="project-name">SQL Injection Playground</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Database"><i class="fa-solid fa-database"></i></span>
+                    <span class="tech" title="Bug"><i class="fa-solid fa-bug"></i></span>
+                </div>
+                <div class="project-date">2026</div>
+            </div>
+
+            <div class="project-row" data-language="Security" data-year="2026">
+                <div class="project-name">Blue Team Detection Rules</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Shield"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span class="tech" title="Bell"><i class="fa-solid fa-bell"></i></span>
+                </div>
+                <div class="project-date">2026</div>
+            </div>
+
+            <div class="project-row" data-language="HTML, CSS" data-year="2024">
+                <div class="project-name">Portfolio Landing Page</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="HTML"><i class="fa-brands fa-html5"></i></span>
+                    <span class="tech" title="CSS"><i class="fa-brands fa-css3-alt"></i></span>
+                </div>
+                <div class="project-date">2024</div>
+            </div>
+
+            <div class="project-row" data-language="Linux, Git" data-year="2025">
+                <div class="project-name">SysAdmin Toolkit Pack</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Linux"><i class="fa-brands fa-linux"></i></span>
+                    <span class="tech" title="Git"><i class="fa-brands fa-git-alt"></i></span>
+                </div>
+                <div class="project-date">2025</div>
+            </div>
+
+            <div class="project-row" data-language="Security, Networking" data-year="2025">
+                <div class="project-name">RedShield Firewall Dashboard</div>
+                <div class="project-lang tech-icons">
+                    <span class="tech" title="Shield"><i class="fa-solid fa-shield-halved"></i></span>
+                    <span class="tech" title="Networking"><i class="fa-solid fa-network-wired"></i></span>
+                </div>
+                <div class="project-date">2025</div>
             </div>
 
         </div>

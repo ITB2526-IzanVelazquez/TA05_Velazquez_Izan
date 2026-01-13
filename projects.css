@@ -7,7 +7,7 @@
   gap: 25px;
 }
 
-/* ✅ clave: permitir wrap real y que no se salga nada */
+/* filtros responsive */
 .filters-container{
   display: flex;
   justify-content: space-between;
@@ -21,13 +21,13 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  flex-wrap: wrap;        /* ✅ permite que los bubbles bajen */
+  flex-wrap: wrap;
   width: auto;
 }
 
 .filters.pill{
   min-width: 240px;
-  flex: 1 1 260px;        /* ✅ se adapta y evita overflow */
+  flex: 1 1 260px;
 }
 
 .filters input{
@@ -40,7 +40,7 @@
   font-size: 1rem;
 }
 
-/* filter bubble */
+/* bubbles */
 .filter-bubble{
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@
   background: rgba(255, 70, 70, 0.08);
   border: 1px solid rgba(255, 70, 70, 0.35);
 
-  max-width: 100%;         /* ✅ evita que se salga del contenedor */
+  max-width: 100%;
 }
 
 .filter-bubble label{
@@ -66,7 +66,6 @@
   color: white;
   outline: none;
   cursor: pointer;
-
   max-width: 100%;
 }
 
@@ -78,6 +77,21 @@
   flex-direction: column;
   gap: 12px;
 }
+
+/* ✅ SCROLL (mismo look que index) */
+.scroll-list{
+  max-height: 58vh;
+  overflow-y: auto;
+  padding-right: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 70, 70, 0.55) transparent;
+}
+.scroll-list::-webkit-scrollbar{ width: 7px; }
+.scroll-list::-webkit-scrollbar-thumb{
+  background: rgba(255, 70, 70, 0.55);
+  border-radius: 10px;
+}
+.scroll-list::-webkit-scrollbar-track{ background: transparent; }
 
 .project-row{
   display: grid;
@@ -103,6 +117,13 @@
 .project-name{ font-weight: 700; }
 .project-date{ text-align: right; opacity: .75; }
 
+/* ✅ resalta la fila del clicable */
+.project-row.is-featured{
+  background: linear-gradient(90deg, rgba(255,59,59,0.22), rgba(179,18,18,0.28));
+  border: 1px solid rgba(255, 70, 70, 0.55);
+  box-shadow: 0 0 16px rgba(255, 70, 70, 0.20);
+}
+
 /* tech icons */
 .tech-icons{
   display: flex;
@@ -126,25 +147,22 @@
   font-size: 18px;
 }
 
-/* ✅ FIX MÓVIL: EL YEAR YA NO SE SALE */
+/* responsive */
 @media (max-width: 768px){
   .filters-container{
     flex-direction: column;
     align-items: stretch;
   }
 
-  .filters{
-    width: 100%;
-  }
+  .filters{ width: 100%; }
 
-  /* ✅ cada bubble ocupa el ancho y el select se ajusta */
   .filter-bubble{
     width: 100%;
     justify-content: space-between;
   }
 
   .filter-bubble select{
-    width: 52%;      /* ✅ evita overflow del Year */
+    width: 52%;
     text-align: right;
   }
 
@@ -155,4 +173,6 @@
 
   .project-date{ text-align: left; }
   .tech-icons{ justify-content: flex-start; }
+
+  .scroll-list{ max-height: 60vh; }
 }

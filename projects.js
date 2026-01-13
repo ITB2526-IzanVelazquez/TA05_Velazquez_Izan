@@ -3,20 +3,22 @@ const languageFilter = document.getElementById("languageFilter");
 const yearFilter = document.getElementById("yearFilter");
 const rows = Array.from(document.querySelectorAll(".project-row"));
 
-function norm(s){ return (s || "").toLowerCase().trim(); }
+function normalize(str) {
+  return (str || "").toLowerCase().trim();
+}
 
-function applyFilters(){
-  const txt = norm(filterInput.value);
-  const lang = languageFilter.value;
+function applyFilters() {
+  const text = normalize(filterInput.value);
+  const lang = normalize(languageFilter.value);
   const year = yearFilter.value;
 
-  rows.forEach(row=>{
-    const name = norm(row.querySelector(".project-name")?.textContent);
-    const rowLang = norm(row.dataset.language);
-    const rowYear = row.dataset.year;
+  rows.forEach(row => {
+    const name = normalize(row.querySelector(".project-name")?.textContent);
+    const rowLang = normalize(row.dataset.language || "");
+    const rowYear = row.dataset.year || "";
 
-    const okText = !txt || name.includes(txt);
-    const okLang = (lang === "all") || rowLang.includes(norm(lang));
+    const okText = !text || name.includes(text);
+    const okLang = (lang === "all") || rowLang.includes(lang);
     const okYear = (year === "all") || rowYear === year;
 
     row.style.display = (okText && okLang && okYear) ? "grid" : "none";
@@ -26,4 +28,5 @@ function applyFilters(){
 filterInput.addEventListener("input", applyFilters);
 languageFilter.addEventListener("change", applyFilters);
 yearFilter.addEventListener("change", applyFilters);
+
 applyFilters();
